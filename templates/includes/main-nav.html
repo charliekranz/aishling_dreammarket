@@ -18,10 +18,10 @@
                 Ingriedients
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="ingredients-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=positive,neutral,negative" class="dropdown-item">All Ingredients</a>
+                <a href="{% url 'products' %}?category=positive" class="dropdown-item">Positive</a>
+                <a href="{% url 'products' %}?category=neutral" class="dropdown-item ">Neutral</a>
+                <a href="{% url 'products' %}?category=negative" class="dropdown-item ">Negative</a>
             </div>
         </li>
 
@@ -30,9 +30,11 @@
                 Equipment
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="equipment-link">
-                <a href="" class="dropdown-item">Bed &amp; Bath</a>
-                <a href="" class="dropdown-item">Kitchen &amp; Dining</a>
-                <a href="" class="dropdown-item">All Homeware</a>
+                <a href="{% url 'products' %}?category=headgear,mixer,replay,shareware" class="dropdown-item">All Equipment</a>
+                <a href="{% url 'products' %}?category=headgear" class="dropdown-item">Headgear</a>
+                <a href="{% url 'products' %}?category=mixer" class="dropdown-item">Dream Mixer</a>
+                <a href="{% url 'products' %}?category=replay" class="dropdown-item">Replay Device</a>
+                <a href="{% url 'products' %}?category=shareware" class="dropdown-item">Shareware</a>
             </div>
         </li>
 
@@ -42,6 +44,10 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="" class="dropdown-item">By Price</a>
+                <a href="" class="dropdown-item ">By Rating</a>
+                <a href="" class="dropdown-item ">By Category</a>
+                <a href="" class="dropdown-item">All Products</a>
                 <a href="" class="dropdown-item">New Arrivals</a>
                 <a href="" class="dropdown-item">Deals</a>
                 <a href="" class="dropdown-item">Clearance</a>
