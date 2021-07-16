@@ -100,3 +100,32 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+
+
+images used -
+
+cosmos
+https://pxhere.com/en/photo/1268143
+
+fear
+https://pxhere.com/en/photo/846223
+
+adventure
+https://pxhere.com/en/photo/1327741
+
+scary night
+https://pxhere.com/en/photo/656399
+
+fallen kingdom
+https://pxhere.com/en/photo/1460325
+
+defending the kingdom
+https://pxhere.com/en/photo/1413030
+
+
+
+
+
+
+
