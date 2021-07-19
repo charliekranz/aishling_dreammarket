@@ -159,6 +159,18 @@ https://pxhere.com/en/photo/22859
 Hairnet
 https://dlpng.com/png/6966725
 
+Recorder / Replay
+https://dlpng.com/png/7450753
+
+Shareware Cable
+https://www.mln.com.au/img/uploads/images/products/Huntkey-Black_cable_with_lightning.jpg
+
+rock icon
+https://pxhere.com/en/photo/726703
+
+head icon
+https://pxhere.com/en/photo/1640137
+
 
 
 
