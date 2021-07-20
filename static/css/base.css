@@ -68,6 +68,18 @@ body {
     background: #4848b4 !important;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-blue {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #4848b4;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
