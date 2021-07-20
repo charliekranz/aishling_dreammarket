@@ -64,6 +64,10 @@ body {
     background: #000 !important;
 }
 
+.bg-blue {
+    background: #4848b4 !important;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
