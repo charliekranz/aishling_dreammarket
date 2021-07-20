@@ -52,6 +52,10 @@ body {
     color: #000 !important;
 }
 
+.text-blue {
+    color: #4848b4 !important;
+}
+
 .border-black {
     border: 1px solid blue !important;
 }
@@ -73,6 +77,18 @@ body {
 a.category-badge > span.badge:hover {
     background: #4848b4 !important;
     color: #fff !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
 }
 
 /* -------------------------------- Media Queries */
