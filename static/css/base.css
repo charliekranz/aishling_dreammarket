@@ -34,8 +34,13 @@ body {
 }
 
 .btn-black {
-    background: #4848b4;
+    background: #000;
     color: white;
+}
+
+.btn-blue {
+    background: #4848b4;
+    color: white !important;
 }
 
 .shop-now-button:hover,
