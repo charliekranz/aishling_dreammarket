@@ -5,7 +5,7 @@ html {
 body {
     background: url('/media/cosmos-bg.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 208px);
+    height: calc(100vh - 164px);
     color: #555;
     font-family: 'Nunito';
 }
@@ -269,10 +269,10 @@ input[name='q']::placeholder {
   /* pad the top a bit when navbar is collapsed on mobile */
   @media (max-width: 991px) {
       .header-container {
-          padding-top: 208px;
+          padding-top: 164px;
       }
   
       body {
-          height: calc(100vh - 208px);
+          height: calc(100vh - 164px);
       }
   }
