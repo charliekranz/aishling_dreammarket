@@ -290,18 +290,18 @@ input[name='q']::placeholder {
       }
   
       .header-container {
-          padding-top: 134px;
+          padding-top: 124px;
       }
   }
   
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 134px;
+        padding-top: 124px;
     }
 
     body {
-        height: calc(100vh - 134px);
+        height: calc(100vh - 124px);
     }
 
     .display-4.logo-font.text-black {
