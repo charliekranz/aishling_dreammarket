@@ -1,0 +1,1 @@
+web: gunicorn aishling_dreamshop.wsgi:application
