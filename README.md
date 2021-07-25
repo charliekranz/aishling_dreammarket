@@ -173,8 +173,8 @@ https://pxhere.com/en/photo/1640137
 
 
 
-
-
+Code: Carousel
+https://getbootstrap.com/docs/4.0/components/carousel/
 
 
 

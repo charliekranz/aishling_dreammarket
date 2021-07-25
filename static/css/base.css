@@ -186,7 +186,12 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* -------------------------------- Media Queries */
+/* -------------------------------- Carousel */
+
+.rounded-carousel {
+    border-radius: 25px;
+}
+
 
 /* -------------------------------- Media Queries */
 
