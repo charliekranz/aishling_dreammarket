@@ -197,7 +197,7 @@ input[name='q']::placeholder {
 .footer-main {
     height: 100px;
     min-height: 100px;
-    background-color: #b4b448d9;
+    background-color: #b4b44800;
     color: #ffffff;
 }
 
