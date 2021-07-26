@@ -10,6 +10,10 @@ body {
     font-family: 'Nunito';
 }
 
+.thick-font {
+    font-family: 'Work Sans', sans-serif;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
