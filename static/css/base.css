@@ -77,6 +77,10 @@ body {
     background: #4848b4 !important;
 }
 
+.spaced-m {
+    letter-spacing: 2px;
+}
+
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
@@ -184,6 +188,10 @@ input[name='q']::placeholder {
     border-bottom-color: #343a40 !important;
 }
 
+.bg-delivery-alert {
+    background-color: #b4b448d9;
+}
+
 .bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
@@ -270,7 +278,11 @@ input[name='q']::placeholder {
   }
   
   .allauth-form-inner-content a {
-      color: #17a2b8; /* text-info */
+      color: #a1a100!important; /* text-info */
+  }
+
+  .text-info {
+    color: #a1a100!important;
   }
   
 /* Product Form */
@@ -326,7 +338,7 @@ input[name='q']::placeholder {
         height: calc(100vh - 124px);
     }
 
-    .display-4.logo-font.text-black {
+    .display-4.logo-font.text-blue {
         font-size: 2rem;
     }
 
@@ -361,4 +373,14 @@ input[name='q']::placeholder {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+}
+
+/* Dropdown Menu */
+
+.dropdown-menu {
+    background-color: #dddd96;
+}
+
+.border-dark {
+    color: #4848b4 !important;
 }

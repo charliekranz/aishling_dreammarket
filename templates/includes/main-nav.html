@@ -1,13 +1,13 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+            <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="dreams-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dreams
+            <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#" id="dreams-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-moon"></i> Dreams
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="dreams-link">
                 <a href="{% url 'products' %}?category=scary-dream,adventure-dream,mystery-dream,atmospheric-dream" class="dropdown-item">All Dreams</a>
@@ -19,8 +19,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="ingredients-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Ingriedients
+            <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#" id="ingredients-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-mortar-pestle"></i> Ingriedients
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="ingredients-link">
                 <a href="{% url 'products' %}?category=positive,neutral,negative" class="dropdown-item">All Ingredients</a>
@@ -31,8 +31,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="equipment-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Equipment
+            <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#" id="equipment-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fab fa-usb"></i> Equipment
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="equipment-link">
                 <a href="{% url 'products' %}?category=headgear,mixer,replay,shareware" class="dropdown-item">All Equipment</a>
@@ -44,8 +44,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Everything
+            <a class="logo-font font-weight-bold nav-link text-blue" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-th-list"></i> Everything
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
