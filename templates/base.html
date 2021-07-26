@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;900&family=Work+Sans:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito:wght@200;400;900&family=Work+Sans:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -45,15 +45,15 @@
 
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-5 my-auto py-1 py-lg-0 text-center text-lg-left">
+            <div class="col-12 col-lg-6 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font font-weight-normal text-blue my-0">AISHLING DreamShop&#x2122;</h2>
+                    <h2 class=" font-weight-normal my-0"><span class="text-gold script-font spaced-l" style="font-size: 1.2em">Aishling </span><span class="text-blue logo-font">DreamShop&#x2122;</span></h2>
                 </a>
-                <p class="text-blue pl-3 font-italic spaced-m d-none d-lg-block d-xl-block">
+                <p class="text-gold pl-3 font-italic spaced-m d-none d-lg-block d-xl-block">
                     The Very Best Dreams Crafted in Ireland
                 </p>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
                 <!-- <h6 class="text-blue text-center font-italic spaced-m">
                     The Very Best Dreams Crafted in Ireland
                 </h6> -->
@@ -165,11 +165,12 @@
 
   </body>
 
-  <footer class="footer-main mt-5">
+  <footer class="footer-main mt-5 bg-white rounded-top">
    <div class="col-12 d-flex justify-content-center footer-menu p-3">
-       <p>
-       &#169; 2021 Aishing Dreamshop Website is for educational purposes only. <em>We can't buy, sell or create dreams.... yet!
-       </em></p>
+    <p>
+        &#169; 2021 Aishing Dreamshop Website is for educational purposes only.
+        <em>We can't buy, sell or create dreams.... yet!</em>
+    </p>
    </div>
 </footer>
 </html>

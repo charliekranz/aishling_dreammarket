@@ -17,7 +17,7 @@
                 <h2 class="logo-font text-blue">DREAMSHOP&#x2122;	</h2>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge badge-white text-blue rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                        <span class="p-2 mt-2 badge badge-white text-blue rounded-0 border border-dark font-weight-normal">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
                 <hr class="w-50 mb-1">
@@ -64,12 +64,12 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <h4 class="mb-0">{{ product.name }}</h4>
+                                    <h4 class="mb-0 text-blue">{{ product.name }}</h4>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                            <p class="lead mb-0 text-left font-weight-light text-gold">€{{ product.price }}</p>
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">

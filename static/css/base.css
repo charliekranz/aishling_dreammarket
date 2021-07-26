@@ -14,13 +14,17 @@ a:hover {
 body {
     background: url('/media/cosmos-bg.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(100vh - 190px);
     color: #555;
     font-family: 'Nunito';
 }
 
 .thick-font {
     font-family: 'Work Sans', sans-serif;
+}
+
+.script-font {
+    font-family: 'Kaushan Script', cursive;
 }
 
 /* from Bulma */
@@ -74,6 +78,10 @@ body {
     color: #4848b4 !important;
 }
 
+.text-gold {
+    color: #a1a100 !important;
+}
+
 .border-black {
     border: 1px solid blue !important;
 }
@@ -92,6 +100,10 @@ body {
 
 .spaced-m {
     letter-spacing: 2px;
+}
+
+.spaced-l {
+    letter-spacing: 4px;
 }
 
 .btn-outline-black {
@@ -220,14 +232,12 @@ input[name='q']::placeholder {
 /*--------------------------------------------------------  Footer */
 
 .footer-main {
-    height: 100px;
-    min-height: 100px;
-    background-color: #b4b44800;
-    color: #ffffff;
+    height: 60px;
+    min-height: 80px;
 }
 
 .footer-menu {
-    background-color: #b4b448d9;
+    /* background-color: #ffffffd9; */
 }
 
 
@@ -337,7 +347,7 @@ input[name='q']::placeholder {
       }
   
       .header-container {
-          padding-top: 164px;
+          padding-top: 190px;
       }
   }
   
