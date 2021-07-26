@@ -192,6 +192,19 @@ input[name='q']::placeholder {
     border-radius: 25px;
 }
 
+/*--------------------------------------------------------  Footer */
+
+.footer-main {
+    height: 100px;
+    min-height: 100px;
+    background-color: #b4b448d9;
+    color: #ffffff;
+}
+
+.footer-menu {
+    background-color: #b4b448d9;
+}
+
 
 /* -------------------------------- Media Queries */
 
