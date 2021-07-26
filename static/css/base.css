@@ -2,6 +2,15 @@ html {
     height: 100%;
 }
 
+a {
+    color:#a1a100;
+}
+
+a:hover {
+    color: #7c7c00;
+    text-decoration: underline;
+}
+
 body {
     background: url('/media/cosmos-bg.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -75,6 +84,10 @@ body {
 
 .bg-blue {
     background: #4848b4 !important;
+}
+
+.bg-gold {
+    background: #b4b448!important;
 }
 
 .spaced-m {

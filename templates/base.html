@@ -50,7 +50,7 @@
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-blue my-0"><strong>AISHLING</strong> DreamShop&#x2122;</h2>
+                    <h2 class="logo-font text-blue my-0"><strong><span class="thick-font">AISHLING</span></strong> DreamShop&#x2122;</h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -88,13 +88,13 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                <a href="{% url 'add_product' %}" class="dropdown-item text-blue"><i class="fas fa-boxes"></i> Product Management</a>
                                 {% endif %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                <a href="{% url 'profile' %}" class="dropdown-item text-blue"><i class="fas fa-user-alt"></i> My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item text-blue"><i class="fas fa-sign-out-alt"></i> Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                <a href="{% url 'account_signup' %}" class="dropdown-item text-blue"><i class="fas fa-edit"></i> Sign Up</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item text-blue"><i class="fas fa-sign-in-alt"></i> Log In</a>
                             {% endif %}
                         </div>
                     </li>
@@ -126,7 +126,7 @@
             </nav>
         </div>
         <div id="delivery-banner" class="row text-center">
-            <div class="col bg-blue text-white">
+            <div class="col bg-gold text-white">
                 <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>    
             </div>   
         </div>
@@ -167,8 +167,8 @@
 
   <footer class="footer-main mt-5">
    <div class="col-12 d-flex justify-content-center footer-menu p-3">
-       <p><em>
-       &#169; 2021 Aishing Dreamshop Website is for educational purposes only. We can't buy, sell or create dreams.... yet!
+       <p>
+       &#169; 2021 Aishing Dreamshop Website is for educational purposes only. <em>We can't buy, sell or create dreams.... yet!
        </em></p>
    </div>
 </footer>
