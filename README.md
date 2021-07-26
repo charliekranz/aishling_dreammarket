@@ -171,11 +171,12 @@ https://pxhere.com/en/photo/726703
 head icon
 https://pxhere.com/en/photo/1640137
 
-
+<hr>
 
 Code: Carousel
 https://getbootstrap.com/docs/4.0/components/carousel/
 
-
+Search Bar
+https://mdbootstrap.com/docs/standard/forms/search/
 
 

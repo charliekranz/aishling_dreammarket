@@ -52,7 +52,13 @@
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products'%}">
-                    <div class="input-group w-100">
+                    <div class="input-group rounded">
+                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search the Dreamshop">
+                        <span class="input-group-text border-0" id="search-addon">
+                          <i class="fas fa-search"></i>
+                        </span>
+                      </div>
+                    <!-- <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
                             <button class="form-control btn btn-blue border border-black rounded-0" type="submit">
@@ -61,7 +67,7 @@
                                 </span>
                             </button>
                         </div>
-                    </div>
+                    </div> -->
                 </form>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -153,8 +159,8 @@
 
   </body>
 
-  <footer class="footer-main">
-   <div class="col-12 d-flex justify-content-center footer-menu">
+  <footer class="footer-main mt-5">
+   <div class="col-12 d-flex justify-content-center footer-menu p-3">
        <p><em>
        &#169; 2021 Aishing Dreamshop Website is for educational purposes only. We can't buy, sell and create dreams.... yet!
        </em></p>
