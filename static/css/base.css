@@ -12,7 +12,7 @@ a:hover {
 }
 
 body {
-    background: url('/media/cosmos-bg.jpg') no-repeat center center fixed;
+    background: url('/media/cosmos-bg-optimised.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 190px);
     color: #555;
