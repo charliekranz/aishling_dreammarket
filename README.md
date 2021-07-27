@@ -33,6 +33,7 @@ Overview
 - ### Branding 
     - The Aisling name derived from the Irish word for dream - "Aisling"
     - Dreamshop 
+    - The tagline helps reinforce the premise, that we live in a world where dreams can be manufactured, sold and shared
     - Clear iconography for key features and functions
 
 - ### Colours
