@@ -32,7 +32,7 @@ body {
 }
 
 .dropdown-item {
-    color: #a0a000;
+    color: #85851b;
 }
 
 .rounded-card {
@@ -45,6 +45,10 @@ body {
 
 .card {
     border: 0px!important;
+}
+
+.card-header {
+    background-color: #ffffff!important;
 }
 
 /* from Bulma */
