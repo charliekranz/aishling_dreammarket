@@ -1,6 +1,6 @@
 <img src="https://ckranz-aishling-dreamshop.s3.amazonaws.com/media/water-nature-horizon-sky-air-lake-1327741-pxhere.com_TkExcn8.jpg">
 
-# Aishing Dreamshop
+# Aisling Dreamshop
 
 Overview
 
@@ -20,33 +20,32 @@ Overview
     1. As a Returning Visitor, I want to be able to edit or update my profile.
 
 - #### Frequent User Goals
-    1. As a Frequent User, I want to be able to return to Aishling Dreamshop and search/purchase products.
+    1. As a Frequent User, I want to be able to return to Aisling Dreamshop and search/purchase products.
 
 - #### Superuser Goals
     1. As a Superuser, I want to be able to easily add or edit Products.
 
-
 - #### Wireframes
-    - Wireframes: [View](https://blockbuster-charliekranz.herokuapp.com/static/MS3-project-files/MS3-wireframes-CharlieKranz-Block+Buster.pdf)
+    - Wireframes: [View](ttps://ckranz-aishling-dreamshop.s3.amazonaws.com/media/water-nature-horizon-sky-air-lake-1327741-pxhere.com_TkExcn8.jpg)
 
 ## Design
 
 - ### Branding 
-    - The Block+Buster+Builder brand is an alliterative phrasing that has the dual purpose of evoking succesful films (Blockbusters) as well as the compartmentalized "block" construction which makes up the experience.
-    - Clear iconography for all features and functions
-    - Further "B" alliteration with the Build and Browse features
+    - The Aisling name derived from the Irish word for dream - "Aisling"
+    - Dreamshop 
+    - Clear iconography for key features and functions
 
 - ### Colours
-    - Using a very simple, though unusual, Purple schematic
-    - Additional colour variations to highlight functions: Delete (red) and Cancel (Gray)
+    - Using a simple midnight blue and gold schematic
+    - Additional colour variations to highlight functions based on Bootstrap model
 
 - ### UI
     - Clean, simple UI
-    - Larger screens allow for some 2 column layouts
-    - Smaller screens use 1-column layout throughout and some font-size reduction
+    - Larger screens allow for some 3-4 column layouts
+    - Smaller screens use 1-2 column layout throughout and some font-size reduction
 
 - #### Typography
-    - Anton font formore compressed Block+Buster+Builder branded text
+    - Anton font for more compressed Block+Buster+Builder branded text
     - PT Mono monospace font for some featured text sections - to evoke the typewriter feel of a screenplay writer
     - Sans Serif for body and smaller text
 

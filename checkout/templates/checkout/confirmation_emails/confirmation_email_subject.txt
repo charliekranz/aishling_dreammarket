@@ -1,1 +1,1 @@
-Aishling Dreamshop Confirmation for Order Number {{ order.order_number }}
+Aisling Dreamshop Confirmation for Order Number {{ order.order_number }}
