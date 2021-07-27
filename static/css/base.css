@@ -278,8 +278,11 @@ input[name='q']::placeholder {
 /*--------------------------------------------------------  Footer */
 
 .footer-main {
-    height: 60px;
+    height: 80px;
     min-height: 80px;
+    border-radius: 5em;
+    max-width: 100%;
+    margin: auto;
 }
 
 .footer-menu {
