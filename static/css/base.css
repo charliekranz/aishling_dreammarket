@@ -31,6 +31,10 @@ body {
     text-shadow: 2px 2px 2px #0c0c16;
 }
 
+.dropdown-item {
+    color: #a1a100;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -91,7 +95,7 @@ body {
 }
 
 .border-black {
-    border: 1px solid blue !important;
+    border: 1px solid #dee2e6!important;
 }
 
 .bg-black {
@@ -106,12 +110,22 @@ body {
     background: #b4b448!important;
 }
 
+.bg-white {
+    background: #fff!important;
+}
+
 .spaced-m {
     letter-spacing: 2px;
 }
 
 .spaced-l {
     letter-spacing: 4px;
+}
+
+.delivery-middle {
+    max-width: 60%;
+    margin: auto;
+    border-radius: 2em;
 }
 
 .btn-outline-black {
@@ -124,6 +138,14 @@ body {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid #4848b4;
+}
+
+.btn-selector {
+    border-radius: 2em!important;
+}
+
+.border-light {
+    border-color: rgb(0 123 255 / 50%)!important;
 }
 
 .overlay {

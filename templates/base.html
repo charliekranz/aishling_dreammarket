@@ -59,8 +59,8 @@
                 </h6> -->
                 <form method="GET" action="{% url 'products'%}">
                     <div class="input-group rounded">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search the Dreamshop">
-                        <span class="input-group-text border-0" id="search-addon">
+                        <input class="form-control border border-black btn-selector" type="text" name="q" placeholder="Search the Dreamshop">
+                        <span class="input-group-text border-0 text-blue bg-white" id="search-addon">
                           <i class="fas fa-search"></i>
                         </span>
                       </div>
@@ -126,8 +126,8 @@
             </nav>
         </div>
         <div id="delivery-banner" class="row text-center">
-            <div class="col bg-gold text-white">
-                <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>    
+            <div class="col bg-gold text-white delivery-middle">
+                <h4 class="logo-font my-1 spaced-l">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>    
             </div>   
         </div>
     </header>
