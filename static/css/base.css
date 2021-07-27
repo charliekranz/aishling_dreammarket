@@ -35,6 +35,18 @@ body {
     color: #a1a100;
 }
 
+.rounded-card {
+    border-radius: 2em!important;
+}
+
+.small-rounded{
+    border-radius: .8em!important;
+}
+
+.card {
+    border: 0px!important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
