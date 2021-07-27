@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container pt-5 bg-white">
+  <div class="row">
+      <div class="col-sm-4">
+          <div class="card">
+              <div class="card-header logo-font text-blue pt-4">
+                  <h2>Contact Us</h2>
+              </div>
+              <div class="card-body">
+                  <h3 class="card-title text-gold script-font">We want to hear from you!</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mauris magna, vehicula at mi at, vulputate varius ante. Sed rutrum mi non mattis imperdiet. Sed ultrices lorem ac elementum fermentum. Maecenas aliquet augue.</p>
+                  <a href="/products/?category=scary-dream,adventure-dream,mystery-dream,atmospheric-dream" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3"><i class="fas fa-moon"></i> Shop Dreams</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-sm-8 bg-white">
+        <div class="contact-form">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="fname">First Name:</label>
+            <div class="col-sm-10">          
+            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="lname">Last Name:</label>
+            <div class="col-sm-10">          
+            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="comment">Comment:</label>
+            <div class="col-sm-10">
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+          </div>
+          <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn-lg btn-blue">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                <div class="contact-form-wrapper mx-auto my-3">
+                    <form id="contact-form" method="POST">
+                        {% csrf_token %}
+                        <fieldset class="form-group">
+                            <legend class="pink-cap-header">Get in touch</legend>
+                            <p>Got a question, comment or just want to say hi?<br>
+                                Send me a message!</p>
+                            <hr>
+                            {{ form|crispy }}
+                        </fieldset>
+                        <div class="form-group">
+                            <button class="btn btn-pink btn-cta m-0" type="submit">Send</button>
+                        </div>
+                    </form>
+
+
+
+  </div>
+</div>
+
+
+<!--
+<div class="container bg-white h-100 pt-5">
+      <div class="col-12 col-md-6">
+          <div class="card-header logo-font text-blue pt-4">
+              <h2>Contact Us</h2>
+          </div>
+          <div class="card-body">
+              <h3 class="card-title text-gold script-font">We want to hear from you!</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mauris magna, vehicula at mi at, vulputate varius ante. Sed rutrum mi non mattis imperdiet. Sed ultrices lorem ac elementum fermentum. Maecenas aliquet augue.</p>
+          </div>
+        <div class="col-12 col-md-6">
+          xxx
+        </div>
+  </div> -->
+{% endblock %}

@@ -2,7 +2,7 @@
 
 # Aisling Dreamshop
 
-Overview
+Overview text goes here
 
 ***
 
@@ -58,54 +58,46 @@ Overview
 - __Brand and Navigation Bar__
 
   - The brand and navigation bar displays the site name and gives users the ability to navigate throughout the site
-  - The navigation bar displays navigation options based on the uswers's current state 
-    - Logged-in Users will see the Build and Logout Options (Login and Register options will be hidden)
-    - Logged-out Users will see the Login and Register options (Logout and Build will be hidden)
+  - The navigation bar displays navigation options based on the users's current state 
+    - Logged-in Users will see the My Profile, Product Management and Logout Options under Mt Account tab (Login and Register options will be hidden)
+    - Logged-out Users will see the Signup and Login options under Account tab (Logout, My Profile and Product Management will be hidden)
+    - The Shop Basket will show any items added and Current Total Cost of those items
 
 
 - __Home Page__
 
-  - The Homepage established the basic concept of Block+Buster+Builder
-  - It allows user to Browse current content or to Build their own (after login/registration)
+  - The Homepage welcomes the user and highlights some Dream Products via the carousel
+  - It allows users to immediately engage with Shop via Shop Now button
 
 
-- __Browse Page__
+- __Dreams Page__
 
-  - Displays all current Block+Buster Content 
-  - Allows user to search by Title, Story or Cast 
-
-
-- __MyBB Page__
-
-  - Displays all user's own current Block+Buster Content  
+  - xxx
 
 
-- __Build Page__
+- __Ingredients Page__
 
-  - Allows user to create Block+Busters 
-  - In particular the Randomize Story Feature is a key fun aspect
-
-<img src="https://blockbuster-charliekranz.herokuapp.com/static/MS3-project-files/build.jpg">
+  - xxx
 
 
-- __Edit Page__
+- __Equipment Page__
 
-  - Allows user to edit any aspect of their Block+Buster Content
-  - Allows User to Delete their Content entirely 
+  - xxx
+
+
+- __Everything Page__
+
+  - xxx
+
+
+- __About Page__
+
+  - xxx
 
 
 ### Features Left to Implement
 
-- Allow users to recover password
-- Paginate - would like to Paginate every 30 Blockbusters
-- Re-index db to include username which would allow users to search by usernames
-- Username search functionality would also allow me to use Jinga templating to give users a "Share your BBs" link atop MyBB page
-- My friend Ronan mentioned a Python library that allows for pluralisation of text, which I'd like to invstigate. Failing that some more complex programming to use appropriate singular and/or plural string for story sections.
-- Possibly add option for people to suggest Block+Buster story content, movies to use as inspiration or new actors to cast section
-- An age-range sort function for actors
-- Twitter and Facebook share options (possibly)
-- Would like to add a disclaimer about removing old BB content occassionally
-- Might allow for longer titles and force linebreak/wrap if no space before end of BB accordion
+- 
 
 
 ## Technologies used 
