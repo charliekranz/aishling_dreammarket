@@ -1,6 +1,7 @@
 from django.db import models
 
-from django.db import models
+# Adding Product Reviews iport
+#from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -31,3 +32,12 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+# Adding Product Reviews
+#class ProductReview(models.Model):
+    #product = models.ForeignKey(Product, related_name='reviews', on_delete=models.SET_NULL)
+    #user = models.ForeignKey(User, related_name='reviews', on_delete=models.SET_NULL)
+
+    #content = models.TextField(blank=True, null=True)
+    #stars = models.IntegerField()
