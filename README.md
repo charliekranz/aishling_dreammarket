@@ -459,6 +459,9 @@ https://getbootstrap.com/docs/4.0/components/carousel/
 Search Bar
 https://mdbootstrap.com/docs/standard/forms/search/
 
+Comments
+https://djangocentral.com/creating-comments-system-with-django/
+
 
 DEPLOYMENT - from John)Lynch_alumnus post on Slack: https://code-institute-room.slack.com/archives/C0L316Z96/p1571912291489200
 
