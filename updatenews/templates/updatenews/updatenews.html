@@ -15,19 +15,46 @@
 <div class="container pt-5 bg-white">
   <div class="row">
     <div class="col-12">
-        <div class="card">
-            <div class="card-header logo-font text-blue pt-4">
-                <h2>Latest Product Updates</h2>
-            </div>
-            <div class="card-body">
-                <h3 class="card-title text-gold script-font">The Latest News - Tell Us What You Think!</h3>
-                <p class="card-text">xxxxxxxxx</p>
-                <hr>
-                <a href="/products/?category=scary-dream,adventure-dream,mystery-dream,atmospheric-dream"
-                    class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3"><i class="fas fa-moon"></i>
-                    Shop Dreams</a>
-            </div>
+      <div class="card">
+        <div class="card-header logo-font text-blue pt-4">
+          <h2>Latest Product Updates</h2>
         </div>
+        <div class="card-body">
+          <h3 class="card-title text-gold script-font">The Latest News - Tell Us What You Think!</h3>
+          <p class="card-text">xxxxxxxxx</p>
+          <hr>
+          <a href="/products/?category=scary-dream,adventure-dream,mystery-dream,atmospheric-dream"
+            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3"><i class="fas fa-moon"></i>
+            Shop Dreams</a>
+        </div>
+        <div class="card">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 card mb-4  mt-3 left  top">
+                <div class="card-body">
+                  <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+                  <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
+                  <p class="card-text ">{{ object.content | safe }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-  {% endblock %}
+  </div>
+
+  <div class="col-md-8 mt-3 left">
+    {% for post in post_list %}
+    <div class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">{{ post.title }}</h2>
+        <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+
+        <p class="card-text">{{post.content|slice:":200" }}</p>
+        <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+      </div>
+    </div>
+  </div>
+    {% endfor %}
+    {% endblock %}

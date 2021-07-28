@@ -461,6 +461,7 @@ https://mdbootstrap.com/docs/standard/forms/search/
 
 Comments
 https://djangocentral.com/creating-comments-system-with-django/
+https://djangocentral.com/building-a-blog-application-with-django/
 https://github.com/TheAbhijeet/Django_blog/blob/1/blog/models.py
 
 
