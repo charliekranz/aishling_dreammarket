@@ -461,6 +461,7 @@ https://mdbootstrap.com/docs/standard/forms/search/
 
 Comments
 https://djangocentral.com/creating-comments-system-with-django/
+https://github.com/TheAbhijeet/Django_blog/blob/1/blog/models.py
 
 
 DEPLOYMENT - from John)Lynch_alumnus post on Slack: https://code-institute-room.slack.com/archives/C0L316Z96/p1571912291489200
