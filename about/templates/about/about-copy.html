@@ -14,28 +14,35 @@
 {% block content %}
 <div class="container pt-5 bg-white">
   <div class="row">
-    <div class="col-sm-6">
-        <div class="card">
-            <div class="card-header logo-font text-blue pt-4">
-                <h2>About Aisling Dreamshop</h2>
-            </div>
-            <div class="card-body">
-                <h3 class="card-title text-gold script-font">Making Dreams a Reality since 2028</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mauris magna,
-                    vehicula at mi at, vulputate varius ante. Sed rutrum mi non mattis imperdiet. Sed ultrices lorem
-                    ac elementum fermentum. Maecenas aliquet augue.</p>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mauris magna,
-                    vehicula at mi at, vulputate varius ante.</p>
-                <hr>
-                <a href="/products/?category=scary-dream,adventure-dream,mystery-dream,atmospheric-dream"
-                    class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3"><i class="fas fa-moon"></i>
-                    Shop Dreams</a>
-            </div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header logo-font text-blue pt-4">
+          <h2>Latest Product Updates</h2>
         </div>
+        <div class="card-body">
+          <h3 class="card-title text-gold script-font">The Latest News - Tell Us What You Think!</h3>
+          <p class="card-text">xxxxxxxxx</p>
+          <hr>
+          <a href="/products/?category=scary-dream,adventure-dream,mystery-dream,atmospheric-dream"
+            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3"><i class="fas fa-moon"></i>
+            Shop Dreams</a>
+        </div>
+        <div class="card">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 card mb-4  mt-3 left  top">
+                <div class="card-body">
+                  <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+                  <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
+                  <p class="card-text ">{{ object.content | safe }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="col-sm-6 bg-white">
-      xxx
-    </div>
-</div>
-  {% endblock %}
+
+    {% endblock %}
