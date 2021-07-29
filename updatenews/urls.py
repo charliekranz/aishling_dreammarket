@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
     path('updatenews.html', views.updatenews, name='updatenews'),
-#    path('', views.PostList.as_view(), name='home'),
-#    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
+    path('/updatenews/updatenews.html', views.PostList.as_view(), name='updatenews'),
+    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
 ]
