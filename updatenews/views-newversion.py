@@ -8,6 +8,14 @@ from .models import Post
 #
 #    return render(request, 'updatenews/updatenews.html')
 
+def PostList(request, post_id):
+    """ A view to show individual Post details """
+
+    posts = Post.objects.all()
+
+    context = {
+        'product': product,
+    }
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')

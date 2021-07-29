@@ -2,7 +2,9 @@
 
 # Aisling Dreamshop
 
-Overview text goes here
+Aisling Dreamshop is an ecommerce website for the imagination. We can't buy, sell or create customised dreams but what of we could? If we could you might but your Dreams from Aisling Dreamshop!
+
+In learning how to create a ecommerce website using Python and Django I wanted to play with the idea of thsi tecnology.
 
 ***
 
