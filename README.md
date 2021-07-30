@@ -2,9 +2,11 @@
 
 # Aisling Dreamshop
 
-Aisling Dreamshop is an ecommerce website for the imagination. We can't buy, sell or create customised dreams but what of we could? If we could you might but your Dreams from Aisling Dreamshop!
+Aisling Dreamshop is an ecommerce website for the imagination. We can't buy, sell or create customised dreams but what if we could? If we could, you might buy your Dreams from Aisling Dreamshop!
 
-In learning how to create a ecommerce website using Python and Django I wanted to play with the idea of thsi tecnology.
+In learning how to create a ecommerce website using Python and Django I wanted to play with the idea of this technology. I felt the ethereal concepts of dreams and ingredients would be fun to develop and manage.
+
+One thing I've learned in working on this project is just how much more can be done and learned within these building blocks.
 
 ***
 
@@ -13,22 +15,24 @@ In learning how to create a ecommerce website using Python and Django I wanted t
 ### User Stories
 - #### First Time Visitor Goals
     1. As a First Time Visitor, I want to clearly understand the features and functionality of the website.
-    2. As a First Time Visitor, I want to be able to quickly view Products.
+    2. As a First Time Visitor, I want to be able to quickly view Products and Categories.
     3. As a First Time Visitor, I want to be able to easily register, login and logout.
-    5. As a First Time Visitor, I want to be able to search and sort Products.
+    5. As a First Time Visitor, I want to be able to search and sort Products and Categories.
     6. As a First Time Visitor, I want to be able to make secure transactions.
 
  - #### Returning Visitor Goals
     1. As a Returning Visitor, I want to be able to edit or update my profile.
+    2. As a returning Visitor I want to check updates and news regarding products and offerings.
 
 - #### Frequent User Goals
     1. As a Frequent User, I want to be able to return to Aisling Dreamshop and search/purchase products.
 
 - #### Superuser Goals
-    1. As a Superuser, I want to be able to easily add or edit Products.
+    1. As a Superuser, I want to be able to easily add or edit Products and Categories.
+    2. As a Superuser I want to be able to easily add and edit Posts.
 
 - #### Wireframes
-    - Wireframes: [View](ttps://ckranz-aishling-dreamshop.s3.amazonaws.com/media/water-nature-horizon-sky-air-lake-1327741-pxhere.com_TkExcn8.jpg)
+    - Wireframes: [View](media/wireframes/Ms4-AD-wireframe-charlieKranz.pdf)
 
 ## Design
 
