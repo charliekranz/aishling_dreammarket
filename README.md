@@ -1,4 +1,4 @@
-<img src="https://ckranz-aishling-dreamshop.s3.amazonaws.com/media/water-nature-horizon-sky-air-lake-1327741-pxhere.com_TkExcn8.jpg">
+<img src="https://ckranz-aishling-dreamshop.s3.amazonaws.com/media/wireframes/Screen-Shot-2021-07-30-at-17.56.57.jpg">
 
 # Aisling Dreamshop
 
@@ -29,33 +29,31 @@ One thing I've learned in working on this project is just how much more can be d
 
 - #### Superuser Goals
     1. As a Superuser, I want to be able to easily add or edit Products and Categories.
-    2. As a Superuser I want to be able to easily add and edit Posts.
+    2. As a Superuser, I want to be able to easily add and edit Posts.
 
 - #### Wireframes
-    - Wireframes: [View](media/wireframes/Ms4-AD-wireframe-charlieKranz.pdf)
+    - Wireframes: [View](https://ckranz-aishling-dreamshop.s3.amazonaws.com/media/wireframes/Ms4-AD-wireframe-charlieKranz.pdf)
 
 ## Design
 
 - ### Branding 
     - The Aisling name derived from the Irish word for dream - "Aisling"
-    - Dreamshop 
     - The tagline helps reinforce the premise, that we live in a world where dreams can be manufactured, sold and shared
-    - Clear iconography for key features and functions
+    - Clear iconography used for key features and functions, to reinforce utility
 
 - ### Colours
-    - Using a simple midnight blue and gold schematic
+    - Using midnight blue and gold schematic to confer ideas of "night time" and "prestige"
     - Additional colour variations to highlight functions based on Bootstrap model
 
 - ### UI
     - Clean, simple UI
     - Larger screens allow for some 3-4 column layouts
-    - Smaller screens use 1-2 column layout throughout and some font-size reduction
+    - Smaller screens use 1-2 column layout and some font-size reduction
 
 - #### Typography
-    - Anton font for more compressed Block+Buster+Builder branded text
-    - PT Mono monospace font for some featured text sections - to evoke the typewriter feel of a screenplay writer
-    - Sans Serif for body and smaller text
-
+    - Nunito font for headlines, body and smaller text
+    - Work Sans font for thicker headlines
+    - Kaushan Script font for some featured headlines
 
 ## Features
 
@@ -63,48 +61,66 @@ One thing I've learned in working on this project is just how much more can be d
 
 - __Brand and Navigation Bar__
 
-  - The brand and navigation bar displays the site name and gives users the ability to navigate throughout the site
+  - The brand and navigation bar displays the site name and gives users the ability to search, sort and navigate throughout the site
   - The navigation bar displays navigation options based on the users's current state 
-    - Logged-in Users will see the My Profile, Product Management and Logout Options under Mt Account tab (Login and Register options will be hidden)
-    - Logged-out Users will see the Signup and Login options under Account tab (Logout, My Profile and Product Management will be hidden)
-    - The Shop Basket will show any items added and Current Total Cost of those items
-
+  - Logged-in Users will see the My Profile, Product Management and Logout Options under My Account tab (Login and Register options will be hidden)
+  - Logged-out Users will see the Signup and Login options under Account tab (Logout, My Profile and Product Management will be hidden)
+  - The Shop Basket will show any items added and Current Total Cost of those items
+  - The Toats Messages (Alerts) Appear in the Upper right hand section of screen
 
 - __Home Page__
 
   - The Homepage welcomes the user and highlights some Dream Products via the carousel
   - It allows users to immediately engage with Shop via Shop Now button
 
-
 - __Dreams Page__
 
-  - xxx
-
+  - Lists all Dream Products and allows for sub-category sorting
+  - Category and Rating information is presented
+  - Each Product has a Product Detail View allowing user to add a specific quantity to Basket
+  - Superusers can Edit or Delete Products
 
 - __Ingredients Page__
 
-  - xxx
-
+  - Lists all Ingredient Products and allows for sub-category sorting
+  - Category and Rating information is presented
+  - Each Product has a Product Detail View allowing user to add a specific quantity to Basket
+  - Superusers can Edit or Delete Products
 
 - __Equipment Page__
 
-  - xxx
-
+  - Lists all Equipment Products and allows for sub-category sorting
+  - Category and Rating information is presented
+  - Each Product has a Product Detail View allowing user to add a specific quantity to Basket
+  - Superusers can Edit or Delete Products
 
 - __Everything Page__
 
-  - xxx
+  - Lists all Products and allows for sub-category sorting (Price, Rating and Category)
+  - Category and Rating information is presented
+  - Each Product has a Product Detail View allowing user to add a specific quantity to Basket
+  - Superusers can Edit or Delete Products
 
+- __Updates Page__
 
-- __About Page__
+  - Includes About information
+  - Includes Updates / Posts section
 
-  - xxx
+- __Admin Page__
 
+  - Allowes superusers to administer:
+    - Products
+    - Categories
+    - Users 
+    - Posts
+    - Email Addresses
+    - Comments
 
 ### Features Left to Implement
 
-- 
-
+- I'd like to add READ MORE function to Posts and allow Admins to administer Posts from a view within the website itself
+- I'd also like to add Comment Functionality so users can respond to Posts
+- Would alos like to allow logged-in users to rate products
 
 ## Technologies used 
 
@@ -122,15 +138,11 @@ One thing I've learned in working on this project is just how much more can be d
 * [Stripe] (https://stripe.com/en-ie) - Payment Platform
 * [Amazon AWS] (https://aws.amazon.com/) - Web Storage
 
-* [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) - web application library
-* [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - templating engine
-
 ## Testing 
 
 
-- Navbar
 
-I will add a link to XLS sheet for testing similar to Chris's
+- Navbar
 
     - Tested that navigation links linked to appropriate pages
     - Tested that nav links which should be visible were visible based on user session state
@@ -366,7 +378,7 @@ USE_AWS | `True`
 
 - This project was based on the Boutique Ado from Code Institute Course
 
-- Deployment steps taken (and lightly modified) from AJGreaves Django Github Project (https://github.com/AJGreaves/thehouseofmouse/blob/master/README.md#deployment)
+- Deployment and Testing steps taken (and lightly modified) from AJGreaves Django Github Project (https://github.com/AJGreaves/thehouseofmouse/blob/master/README.md)
 - Icons used throughout the website are from [Font Awesome](https://fontawesome.com/)
 - Basic Randomize code (with some of own additional tweaks) - https://jsfiddle.net/aqpwcoju/1/
 - RandomKeygen was used for random passwords https://randomkeygen.com/
