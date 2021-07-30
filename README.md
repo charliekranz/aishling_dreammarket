@@ -55,6 +55,8 @@ One thing I've learned in working on this project is just how much more can be d
     - Work Sans font for thicker headlines
     - Kaushan Script font for some featured headlines
 
+<img src="https://ckranz-aishling-dreamshop.s3.amazonaws.com/media/wireframes/screens.jpg">
+
 ## Features
 
 ### Existing Features
@@ -118,9 +120,9 @@ One thing I've learned in working on this project is just how much more can be d
 
 ### Features Left to Implement
 
-- I'd like to add READ MORE function to Posts and allow Admins to administer Posts from a view within the website itself
+- I'd like to add READ MORE function to each Post and also allow Admins to administer Posts from a view within a webpage
 - I'd also like to add Comment Functionality so users can respond to Posts
-- Would alos like to allow logged-in users to rate products
+- Would also possibly allow logged-in users to rate products
 
 ## Technologies used 
 

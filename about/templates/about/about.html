@@ -21,9 +21,9 @@
         </div>
         <div class="card-body">
           <h3 class="card-title text-gold script-font">Making Dreams a Reality</h3>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mauris magna,
-            vehicula at mi at, vulputate varius ante. Sed rutrum mi non mattis imperdiet. Sed ultrices lorem
-            ac elementum fermentum. Maecenas aliquet augue.</p>
+          <p class="card-text">
+            Aisling Dreamshop is an ecommerce website for the imagination. We can't buy, sell or create customised dreams but what if we could? If we could, you might buy your Dreams from Aisling Dreamshop!
+          </p>
           <p class="card-text">This website is for Educational Purposes only.</p>
           <hr>
           <a href="/products/?category=scary-dream,adventure-dream,mystery-dream,atmospheric-dream"
@@ -51,9 +51,7 @@
           <div class="card-body">
             <h2 class="card-title">{{ post.title }}</h2>
             <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-            <p class="card-text">{{post.content|slice:":200" }}</p>
-            <a href="{% url 'post_detail' post.slug  %}" class="btn btn-sm btn-blue rounded-0 text-uppercase py-3"><i class="fas fa-eye"></i> Read
-              More</a>
+            <p class="card-text">{{post.content|slice:":1000" }}</p>
           </div>
         </div>
         {% endfor %}
