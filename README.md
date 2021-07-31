@@ -315,9 +315,10 @@ _Again this **command may differ depending on your operating system**, please ch
     python manage.py createsuperuser
     ```
 
-11. You can now run the program locally with the following command: 
+11. You can now run the program locally with the following commands: 
     ```
-    python manage.py runserver
+    1. unset DATABASE_URL (If using Gitpod with Code Institute template)
+    2. python manage.py runserver
     ```
 
 12. Once the program is running, go to the local link provided and add `/admin` to the end of the ur. Here log in with your superuser account and create instances of ShippingDestination and Product within the new database.
