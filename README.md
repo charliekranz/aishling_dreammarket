@@ -4,9 +4,9 @@
 
 Aisling Dreamshop is an ecommerce website for the imagination. We can't buy, sell or create customised dreams but what if we could? If we could, you might buy your Dreams from Aisling Dreamshop!
 
-In learning how to create a ecommerce website using Python and Django I wanted to play with the idea of this technology. I felt the ethereal concepts of dreams and ingredients would be fun to develop and manage.
+In learning how to create a ecommerce website using Python and Django I wanted to play with the idea of this technology. I felt the ethereal concepts of dreams and dream ingredients would be fun to develop and manage.
 
-One thing I've learned in working on this project is just how much more can be done and learned within these building blocks.
+One thing I've learned in working on this project is just how much more can be done and learned within these building blocks, which I intend explore further.
 
 ***
 
@@ -61,6 +61,7 @@ One thing I've learned in working on this project is just how much more can be d
 
 ### Existing Features
 
+
 - __Brand and Navigation Bar__
 
   - The brand and navigation bar displays the site name and gives users the ability to search, sort and navigate throughout the site
@@ -70,10 +71,12 @@ One thing I've learned in working on this project is just how much more can be d
   - The Shop Basket will show any items added and Current Total Cost of those items
   - The Toats Messages (Alerts) Appear in the Upper right hand section of screen
 
+
 - __Home Page__
 
   - The Homepage welcomes the user and highlights some Dream Products via the carousel
   - It allows users to immediately engage with Shop via Shop Now button
+
 
 - __Dreams Page__
 
@@ -82,12 +85,14 @@ One thing I've learned in working on this project is just how much more can be d
   - Each Product has a Product Detail View allowing user to add a specific quantity to Basket
   - Superusers can Edit or Delete Products
 
+
 - __Ingredients Page__
 
   - Lists all Ingredient Products and allows for sub-category sorting
   - Category and Rating information is presented
   - Each Product has a Product Detail View allowing user to add a specific quantity to Basket
   - Superusers can Edit or Delete Products
+
 
 - __Equipment Page__
 
@@ -96,6 +101,7 @@ One thing I've learned in working on this project is just how much more can be d
   - Each Product has a Product Detail View allowing user to add a specific quantity to Basket
   - Superusers can Edit or Delete Products
 
+
 - __Everything Page__
 
   - Lists all Products and allows for sub-category sorting (Price, Rating and Category)
@@ -103,10 +109,12 @@ One thing I've learned in working on this project is just how much more can be d
   - Each Product has a Product Detail View allowing user to add a specific quantity to Basket
   - Superusers can Edit or Delete Products
 
+
 - __Updates Page__
 
   - Includes About information
   - Includes Updates / Posts section
+
 
 - __Admin Page__
 
@@ -118,11 +126,13 @@ One thing I've learned in working on this project is just how much more can be d
     - Email Addresses
     - Comments
 
+
 ### Features Left to Implement
 
 - I'd like to add READ MORE function to each Post and also allow Admins to administer Posts from a view within a webpage
 - I'd also like to add Comment Functionality so users can respond to Posts
 - Would also possibly allow logged-in users to rate products
+
 
 ## Technologies used 
 
@@ -142,61 +152,169 @@ One thing I've learned in working on this project is just how much more can be d
 
 ## Testing 
 
+## Manual Testing
+This is the the manual testing undertaken while developing the site. 
+
+### Testing undertaken on desktop
+
+These steps were repeated on a Mac in Chrome and Safari browsers 
+
+#### Elements
+
+1. Navbar 
+    - Clicked each link in the navbar to confirm that it leads to the correct page.
+    - Confirmed when logged out "Sign Up" and "Log in" are visible and that "My Profile" "Log out" and "Product Management" are not.
+    - Log into the site, confirm that options "My Profile" and "Log out" are visible and that "Sign Up" and "Log in" are not.
+    - Additionally checked that when logged in, if user is NOT a Superuser that "Product Managements" does not appear and that if user is Superuser, it does.
+    - Click the individual "Products" links in the navbar, confirm that all sections of the shop are listed in the dropdown menu.
+    - Add an item to the basket, confirm that the update toast message displays the correct product quantity and price.
+    - Add an item to the basket, confirm that the basket icon updates with the correct price displayed.
+	- Searched Products Using Product Name and Description text - confirmed results matched expectations.
+
+#### Home Page
+
+1. Carousel
+    - Allow Carousel to auto-run, confirm that all images and text display as expected.
+    - Adjust width of browser window, confirm carousel displays in an attractive way.
+
+2. Call to action button
+    - Clicked SHOP NOW and confirmed that it loaded the correct Products View
+
+#### Products Page 
+
+1. Breadcrumbs
+    - Click Products links, confirm it loads Products
+
+2. Sorting options
+    - Select the different sorting options from the menu one by one, confirm that the products update correctly and are re-sorted/displayed in the correct method.
+
+3. Product Details
+	- Confirm the appropriate Product Detail view appears when Product Image clicked
+
+#### Product Detail Page 
+	- Keep Shopping button loaded appropriate Products page
+
+1. Product Category
+	- Check that Correct Category displayed and that it links to Category Products Page
+
+2. Product details
+    - Confirm that the listing title, price, and description match those in the database for the product.
+
+3. Product  image
+    - Confirm that the correct image is displayed.
+
+4. Product information
+    - Confirm that all information under the description is as expected. 
+
+5. Product Sizes
+	- Confirm that if sizes options are available for product, that they are displaying as expected.
+
+6. Quantity selection
+    - Quantity updates confirmed (adding additional purchase quantities)
+
+7. Add to Basket button
+    - Click the "add to basket" button. Confirm that the appropriate Quantity is added and displayed in Toast Message and Basket Page 
+    - Add additional Quantity to Basket and confirmed Toast Message and Basket updated correctly
+
+8. Admin Links
+    - Confirmed Edit and Delete links appear for Superusers
+    - Confirmed Edit link displays Correct Product Edit View
+    - Confirmed Edit View displays orrect information
+    - Confirmed Edited data updates correctly in Product View when updated
+    - Confirmed Delete link Deletes Product
 
 
-- Navbar
+#### Sign Up Page
 
-    - Tested that navigation links linked to appropriate pages
-    - Tested that nav links which should be visible were visible based on user session state
-    - Tested that nav links which should be hidden were hidden based on user session state
+- Confirmed correct text and fields displayed
+- Cofirmed Log In link linked to Login Page
+- Confirmed correct alerts displayed is any required fields incorrectly submitted
+- Fill in the form with a username already in the database, confirm that the user is informed that they must use a unique username.
+- Fill in the email input with a non-email address, confirm the user is shown an error asking the to use an email address.
+- Fill in the form with two different passwords, confirm the error is caught again and the user is informed of their mistake.
+- Confirmed when all Sign Up steps executed properly and that Verify message appears
+- Confirmed Verifcation email received and that link verified Sign Up
 
-- Homepage
-    - Tested that buttons which should be visible were visible based on user session state
-    - Tested that buttons which should be hidden were hidden based on user session state
+#### Login Page
 
-- Register
-    - Tested that Registrations were confined to the appropriate restrictions
-    - Those restrictions being alpha/numeric characers only, and following the min-max count 
+- Attempt to log in with a username not in the database, confirm the relevant error message is shown.
+- Attempt to log in with a correct username but wrong password, confirm the relevant error message is shown.
+- Log in with a correct username and password, confirm that the user is logged in and that they are redirected to Home Page, correct Toast Message appears and that account is logged-in
 
-- Login 
-    - Tested that Login always functioned properly, allowing only valid logins
+#### My Profile Page
 
-- Logout 
-    - Tested that logout always successfully logged-out users
+- Go to the account page of a newly created user. Confirm that te profile info form is populated with the correct data
+- Fill in the form correctly, confirm that the "Your account info has been updated." message is shown to the user and that the reloaded form is now populated with the new data.
+- Confirm that a user with previous orders has correct info appearing in Orders History
+- Confirm that all data in the orders on the account page is accurate
 
-- Build
-    - Tested that all appropriate restrictions were enforced, namely
-        - Stories must have all 4 parts selected
-        - Randomization worked across all 4 story parts
-        - Titles had to be eneterd with strict min/max values
-        - A Genre had to be explicitly chosen
-        - Cast had to have at least one person and no more than 3
-    - If any of the above conditions were not met, tested that the approprite prompt appeared
-        - Prompts included Modals for Min/Max cast
-    - Tested that Publish button did correctly save to database
+#### Log Out Page
 
-- Edit 
-    - Tested that all the same Build functions were present as well as:
-        - Cancel to reload the Blockbusters page
-        - Update to save changes to database
-        - Delete did delete Blockbuster with the defensive Modal to check before deleting
+- Add a new product to the users cart. Click the "log out" link in the navigation bar. Confirm that the user is logged out and their cart has been cleared
+- Click the "Log in again" link on this page, confirm that the user is taken back to the login page
 
-- Browse
-    - Tested that Blockbusters from database did populate the Browse page
-    - Tested that Blockbusters did appear in accordion card when clicked
-    - Tested Search function for all indexes
+#### Basket Page
 
-- MyBB 
-    - Tested that all user's own BlockBusters (and only theirs) were displayed
+- Go to the cart page when not logged in to the site, confirm that "Your Dreamshop Basket is empty" displays and the Keep Shopping button is displayed and works as expected
+- Log in and go to the cart page with nothing in the cart. Confirm that the message "Your cart is empty!" displays and the Keep Shopping button is displayed and works as expected
+- Add items to the cart and return to the cart page, confirm that all items in the cart are displayed correctly, with the correct amounts requested by the user
+- Adjust the quantity field and click Update confirm that the shopping cart subtotal is updated to reflect the change
+- Click the delete button on a listing, confirm that the cart page is reloaded with that item removed from the cart
+- Delete all items from the cart, confirm that the cart page is reloaded to reflect the empty cart
 
-- About 
-    - Tested that links to amazon.co.uk worked 
-     
+#### Secure Checkout Page
 
-## TESTED on the Following:
-    * Responsive devices on Google Developer Tools
-    * iPhone 7, iPad Pro
-    * OSX Browsers: Chrome, Safari
+- Confirm Order Summary display correct information including Product info, ISubtotal and Grand Total
+- Confirm Form fields auto-populate if user logged in
+- Confirm Form fields are blank if user not logged-in (Guest)
+- Confirm Adjust Basket button links to Basket and allows user to correctly modify Basket Details
+- Confirm all expected form validation mesures are enforced and appropriate messages display
+- Confirm Complete Order button executes purchase
+- Confirm Stripe Dashboard logs the purchase correctly
+- Confirm Confirmation Page Displays
+- Confirm Toast message appears
+
+#### Order Confirmation Page
+
+- Confirm the inormation displayed matched order placed
+- Confiirm Top Rated Button links to Top-Rated Products Page
+
+#### Toast Messages
+- Confirm Toast Messages appear as expected and respond correclty when closed with 'x'
+
+#### Product Management Page
+- Confirm Product Management form appears as expected
+- Confirm all validation requirements are endoforced and displayed as necessary
+- Confirm images added without image use placeholder image
+
+#### Updates Page
+
+- Confirmed correct text displayed in About Section
+- Confirmed Posts displaying correctly
+
+
+### Testing undertaken on tablet and phone devices
+
+Responsive design was also tested in the Chrome Developer Tools device simulators on all options and orientations.
+
+#### Elements on every page
+
+1. Navbar 
+    - Open the website on mobile, confirm that the navbar is collapsed into a burger icon
+    - click the burger icon, confirm that the navbar list appears are expected.
+    - Click the "Shop" dropdown menu, confirm that the shop sections are displayed. 
+    - Add something to the cart, confirm that the user basket updates and displays correctly.
+
+3. Shop pages
+    - Confirm that the product list is displayed one on top of each other on mobile, and 3 to a row on tablet.
+    - Confirm that all clicks and swipes operate as expected on touch screen.
+
+4. Checkout pages
+    - Check that the display of elements matches the expected layout for mobile and tablet devices.
+
+5. All pages
+    - Navigate to all pages on the site, check that the layout is as expected for the screen size.
+    - Check that all buttons, menus, forms and other elements are the correct proportions and easily clickable with a finger.
 
 
 ### Validator Testing
@@ -208,22 +326,24 @@ One thing I've learned in working on this project is just how much more can be d
 - JS 
    - JS validated but flags undefined and unused variables. All variables are defined and used so have ignored [https://jshint.com/](https://jshint.com/)
 - Python
-   - App.py is PEP8 compliant [Pep8 online](http://pep8online.com/)
+   - Python files are PEP8 compliant (some lines too long and unused Class / Objects alerts remain)
 
 
 ## Debugging
 
-- Accordion on blockbusters page were initially unable to target stories properly. Titles with spaces and/or a number at the start of title_name caused issues. Fixed by using ObjectId instead and adding a character to the start (BB).
+- Gitpod and or the Project template seemed to have a conflict in the last week/s of development requiring me to use the unset DATABASE_URL command to run site. 
 
-- The selected casts weren't appearing as selected in the edit template. Using cast-checkbox class on edit template so that the selected cast appear chosen (thanks to Ronan for spotting that in particular)
+- The Heroku Database failed nearing end of development. Scott and John (CI tutors) assisted me in creating json files and refreshing DB.
 
-- Edit template Updates were not sending cast selection changes. Changed Edit App Route from "cast_members": request.form.getlist("cast_members") to "cast_members": cast_members as request.form did not apply in this case. (Thanks to Ronan for spotting this)
-
-- Caught missing else condition in edit_story.html which as preventing the Genre selection from properly displaying on edit.
+- Confirmation emails seemed to experiencing delays. Igor helped me see that this was due to Heroku Development = True variable.
 
 ### Unfixed Bugs 
 
-- Register function delays after username chosen before password field can be accessed when using Safari for iOS
+- PEP8 Problems on checkout/webhook_handler.py (1) blank line contains whitespace [29, 1], (2) trailing whitespace [35, 10] logged errors to the terminal when fixed. Because of this I left this code with the whitespaces.
+
+- Heroku site was cacheing unintentionally on Chrome Desktop, forcing me to use Private Browsing to effective;y load the latest version of the site. I wouldlike to better understand why this is happening, though expect it is a Heroku-related issue
+
+- Gitpod and or the Project template seemed to have a conflict in the last week/s of development requiring me to use the unset DATABASE_URL command to run site. Would like to better understand the issue and ensure it isn't having further ramifications to the project. 
 
 # Deployment
 
@@ -383,22 +503,19 @@ USE_AWS | `True`
 
 - Deployment and Testing steps taken (and lightly modified) from AJGreaves Django Github Project (https://github.com/AJGreaves/thehouseofmouse/blob/master/README.md)
 - Icons used throughout the website are from [Font Awesome](https://fontawesome.com/)
-- Basic Randomize code (with some of own additional tweaks) - https://jsfiddle.net/aqpwcoju/1/
 - RandomKeygen was used for random passwords https://randomkeygen.com/
-- Getlist fix (partial ) found at https://stackoverflow.com/questions/53344797/how-create-an-array-with-checkboxes-in-flask
-
 
 ### Acknowledgements
-* My mentor Ignatius provided some very valuable planning insight, in particular with regard to setting-up my collections
-* My mentor Chris provided excellent insight and encouragement at the mid and finalisation steps
-* My friend Ronan offered real insight and suggestions on implementing code across both Python and Javascript
+* My mentor Chris provided some helpful insight and encouragement
+* Carousel code taken and modified from Bootstrap  - https://getbootstrap.com/docs/4.0/components/carousel/
+* Search Bar code taken and modified from - https://mdbootstrap.com/docs/standard/forms/search/
+* Posts code adapted from The Abhijeet Blog: 
+https://djangocentral.com/building-a-blog-application-with-django/
+https://github.com/TheAbhijeet/Django_blog/blob/1/blog/models.py
 
 
 ### Media
-Images of a All links included below.
-
-
-images used -
+Images Credits included below.
 
 cosmos
 https://pxhere.com/en/photo/1268143
@@ -472,18 +589,8 @@ https://pxhere.com/en/photo/1291377
 ### Disclaimer
 This website was created for educational purposes only. 
 
-<hr>
 
-Code: Carousel
-https://getbootstrap.com/docs/4.0/components/carousel/
 
-Search Bar
-https://mdbootstrap.com/docs/standard/forms/search/
-
-Comments
-https://djangocentral.com/creating-comments-system-with-django/
-https://djangocentral.com/building-a-blog-application-with-django/
-https://github.com/TheAbhijeet/Django_blog/blob/1/blog/models.py
 
 
 
